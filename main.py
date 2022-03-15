@@ -1,5 +1,6 @@
 
 from fastapi import FastAPI
+from Models.SolverModel import SolverModel
 
 from Models.input_model import InputModel
 from solver import solver
@@ -13,6 +14,8 @@ def read_root():
 
 
 @app.post("/solver/")
-async def solver2(inputModel: InputModel):
-    plan_output,max_route_distance = solver(inputModel)
-    return plan_output
+async def solve(inputModel: InputModel):
+    model = SolverModel(inputModel)
+    result = solver(model)
+
+    return result

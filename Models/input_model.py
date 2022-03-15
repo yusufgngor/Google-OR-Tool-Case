@@ -21,6 +21,12 @@ class InputModel(BaseModel):
     def getVehicleCapacities(self) -> List[int]:
         return [i.capacity[0] for i in self.vehicles]
 
+    def getCustomersServiceTime(self) -> List[int]:
+        temp = [0 for i in range(len(self.matrix))]
+        for i in self.jobs:
+            temp[i.location_index] += i.service
+        return temp
+
     def getCustomersDemands(self) -> List[int]:
         temp = [0 for i in range(len(self.matrix))]
         for i in self.jobs:
