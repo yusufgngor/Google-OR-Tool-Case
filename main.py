@@ -3,7 +3,7 @@ from fastapi import FastAPI
 from Models.SolverModel import SolverModel
 
 from Models.input_model import InputModel
-from solver import solver
+from Logic.solver import solver
 
 
 app = FastAPI()

@@ -58,7 +58,7 @@ def solver(data: SolverModel) -> Result | str:
     routing.AddDimension(
         transit_callback_index,
         0,  # no slack
-        5000,  # vehicle maximum travel distance
+        86400,  # vehicle maximum travel time -> a day
         True,  # start cumul to zero
         "time")
 
