@@ -1,9 +1,7 @@
 from typing import List
 
-from tenacity import retry
-
-from Models.input_model import InputModel
-from Models.vehicle import Vehicle
+from app.Models.input_model import InputModel
+from app.Models.vehicle import Vehicle
 
 
 class SolverModel:

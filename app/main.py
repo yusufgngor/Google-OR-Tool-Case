@@ -1,9 +1,9 @@
 
 from fastapi import FastAPI
-from Models.SolverModel import SolverModel
+from app.Models.SolverModel import SolverModel
 
-from Models.input_model import InputModel
-from Logic.solver import solver
+from app.Models.input_model import InputModel
+from app.Logic.solver import solver
 
 
 app = FastAPI()

@@ -1,10 +1,7 @@
 from typing import List, Dict
 
-from Models.SolverModel import SolverModel
-from ortools.constraint_solver import routing_enums_pb2
+from app.Models.SolverModel import SolverModel
 from ortools.constraint_solver import pywrapcp
-
-from Models.job import Job
 
 
 class Routes:

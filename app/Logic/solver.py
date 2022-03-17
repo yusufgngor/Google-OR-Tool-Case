@@ -1,10 +1,8 @@
-from unittest import result
 from ortools.constraint_solver import routing_enums_pb2
 from ortools.constraint_solver import pywrapcp
-from Models.SolverModel import SolverModel
+from app.Models.SolverModel import SolverModel
 
-from Models.input_model import InputModel
-from Models.result import Result
+from app.Models.result import Result
 
 
 def print_solution(data: SolverModel, manager, routing, solution):

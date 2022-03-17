@@ -1,9 +1,8 @@
 from typing import List
-from numpy import matrix
 
 from pydantic import BaseModel
-from Models.job import Job
-from Models.vehicle import Vehicle
+from app.Models.job import Job
+from app.Models.vehicle import Vehicle
 
 
 class InputModel(BaseModel):
